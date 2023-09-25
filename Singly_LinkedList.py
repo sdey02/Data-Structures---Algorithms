@@ -65,9 +65,9 @@ class Singly_LinkedList:
         return temp
     
     def get (self, index):
-        if index < 0 or index >= self.length:
+        if index < 0 or index > self.length:
             return None
-        temp = temp.next
+        temp = self.head
         for _ in range(index):
             temp = temp.next
         return temp
@@ -118,14 +118,3 @@ class Singly_LinkedList:
             temp.next = before
             before = temp
             temp = after
-    
-
-
-
-
-
-
-
-        
-
-
